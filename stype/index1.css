@@ -1,0 +1,150 @@
+*{
+    padding:0px;
+    margin: 0px;
+
+}
+body{
+     font-size: 12px;
+    
+}
+.main{ 
+    width: 300px;
+    height: 300px; 
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    /*垂直居中*/
+    position: absolute; 
+}
+.title{
+    font-weight:normal;
+}
+.form{
+    padding-top: 30px;
+}
+.form-item label{
+    font-size: 15px;
+    color: #707070;
+}
+.form-item{
+    position: relative;
+}
+.form-item input{
+    width:100%;
+    border: none;
+    border-bottom: solid #e6e6e6 1px;
+    /*一条直线*/
+    height:30px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+   /* padding-right: 60px;*/
+    box-sizing: border-box;
+    /*为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制*/
+    outline: none;
+    padding-top:10px; 
+    padding-left:5px;
+}
+.form-item1 label{
+    font-size: 15px;
+    color: #707070;
+}
+.form-item1{
+    position: relative;
+    /*margin-top:30px;*/
+    /* margin-bottom: 25px;  */
+}
+.form-item1 input{
+   width: 100%;
+    border: none;
+    border-bottom: solid #e6e6e6 1px;
+    /*一条直线*/
+    height:30px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    /*为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制*/
+    outline: none;
+    padding-top:10px; 
+    padding-left:5px;
+}
+.form-item1 a{  
+    position: absolute; 
+    text-decoration: none; 
+    right: 15px;
+    color: #77b9f3;
+    bottom: 20px;
+}
+.form-item a:hover{
+    color: #C6E2ff;
+}
+input::-webkit-input-placeholder
+     {
+         color: #c2c2c2;
+         font-size: 15px;
+         padding-left: 0px;
+         /*输入input的移动*/
+     }
+.btn-submit{
+    font-size: 15px; 
+     overflow: hidden; /*清除浮动*/
+     color: white;
+     background-color: #afd4ff;
+     border: none;
+     width: 100%;
+     height: 50px;
+     margin-top: 20px;
+     border-radius: 5px; /*使形状出现圆角*/
+     outline: none;/*去掉框线*/
+}
+.btn-submit:hover{
+    cursor: pointer;/*手的形状*/
+    background-color: #c6e2ff;
+    /*将手放上去变颜色*/
+}
+.link-login{
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+    margin-top :15px;
+    color: #333;
+    font-size: 15px;
+    overflow: hidden;/*清除浮动*/   
+}
+.link-rigister{
+    cursor: pointer;
+    margin-top :15px; 
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    float:right;
+    overflow: hidden;/*清除浮动*/
+}
+ @media screen and (min-width:420px){
+        .main{
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        }
+        .form-item label{
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        }
+        .form-item1 label{
+            position: absolute;
+            left: 0;
+            bottom: 15px;
+            }
+        .form-item input{
+        padding-left: 50px;
+        box-sizing: border-box;
+        } 
+        .form-item1 input{
+        padding-left: 50px;
+        box-sizing: border-box;
+        }
+    }
